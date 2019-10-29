@@ -26,6 +26,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, assign)CGFloat maxX;      /**< 最大x */
 @property (nonatomic, assign)CGFloat maxY;      /**< 最大y */
 
+
+/// 获取当前view所在的VC
+- (UIViewController*)viewController;
+
 @end
 
 NS_ASSUME_NONNULL_END

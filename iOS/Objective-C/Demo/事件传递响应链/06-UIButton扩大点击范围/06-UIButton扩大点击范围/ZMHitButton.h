@@ -12,8 +12,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZMHitButton : UIButton
 
-@property (nonatomic, assign)CGFloat stretchW;      /** 宽度点击延展的值 <*/
-@property (nonatomic, assign)CGFloat stretchH;      /** 高度点击延展的值 <*/
+@property (nonatomic, assign)CGFloat stretchW;      /** 延展的宽度(左右) <*/
+@property (nonatomic, assign)CGFloat stretchH;      /** 延展的高度(上下) <*/
 @end
 
 NS_ASSUME_NONNULL_END
