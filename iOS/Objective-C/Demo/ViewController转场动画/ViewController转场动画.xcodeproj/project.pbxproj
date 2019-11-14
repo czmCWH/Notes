@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		111C021E237BDA0500A82E24 /* AnimatedTransitioningObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 111C021D237BDA0500A82E24 /* AnimatedTransitioningObject.m */; };
+		111C0221237BDA3200A82E24 /* InteractiveTransitioningObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 111C0220237BDA3200A82E24 /* InteractiveTransitioningObject.m */; };
+		111C0224237BE12D00A82E24 /* TransitionAnimateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111C0223237BE12D00A82E24 /* TransitionAnimateViewController.m */; };
+		112371AF237CEAC200435AAC /* AnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 112371AE237CEAC200435AAC /* AnimatedTransitioning.m */; };
+		112371B2237CEAD600435AAC /* InteractiveTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 112371B1237CEAD600435AAC /* InteractiveTransitioning.m */; };
+		112371B5237CFF1100435AAC /* OverlyPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112371B4237CFF1100435AAC /* OverlyPresentationController.m */; };
+		112371B8237CFFF800435AAC /* ZMModalTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 112371B7237CFFF800435AAC /* ZMModalTransitionDelegate.m */; };
+		11F04B36237B969B0013E090 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04B35237B969B0013E090 /* AppDelegate.m */; };
+		11F04B41237B969D0013E090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F04B40237B969D0013E090 /* Assets.xcassets */; };
+		11F04B44237B969D0013E090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F04B42237B969D0013E090 /* LaunchScreen.storyboard */; };
+		11F04B47237B969D0013E090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04B46237B969D0013E090 /* main.m */; };
+		11F04B51237B98AA0013E090 /* ZMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04B50237B98AA0013E090 /* ZMNavigationController.m */; };
+		11F04B54237B98B70013E090 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04B53237B98B70013E090 /* HomeViewController.m */; };
+		11F04B57237B99290013E090 /* ZMBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04B56237B99290013E090 /* ZMBaseViewController.m */; };
+		11F04B5A237B994A0013E090 /* OneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04B59237B994A0013E090 /* OneViewController.m */; };
+		11F04B5D237B99540013E090 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04B5C237B99540013E090 /* TwoViewController.m */; };
+		11F04B61237B99B70013E090 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04B60237B99B70013E090 /* UIImage+Extension.m */; };
+		11F04B64237B9C3B0013E090 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04B63237B9C3B0013E090 /* UIColor+Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		111C021C237BDA0500A82E24 /* AnimatedTransitioningObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimatedTransitioningObject.h; sourceTree = "<group>"; };
+		111C021D237BDA0500A82E24 /* AnimatedTransitioningObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimatedTransitioningObject.m; sourceTree = "<group>"; };
+		111C021F237BDA3200A82E24 /* InteractiveTransitioningObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractiveTransitioningObject.h; sourceTree = "<group>"; };
+		111C0220237BDA3200A82E24 /* InteractiveTransitioningObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractiveTransitioningObject.m; sourceTree = "<group>"; };
+		111C0222237BE12D00A82E24 /* TransitionAnimateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionAnimateViewController.h; sourceTree = "<group>"; };
+		111C0223237BE12D00A82E24 /* TransitionAnimateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimateViewController.m; sourceTree = "<group>"; };
+		112371AD237CEAC200435AAC /* AnimatedTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimatedTransitioning.h; sourceTree = "<group>"; };
+		112371AE237CEAC200435AAC /* AnimatedTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimatedTransitioning.m; sourceTree = "<group>"; };
+		112371B0237CEAD600435AAC /* InteractiveTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractiveTransitioning.h; sourceTree = "<group>"; };
+		112371B1237CEAD600435AAC /* InteractiveTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractiveTransitioning.m; sourceTree = "<group>"; };
+		112371B3237CFF1100435AAC /* OverlyPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlyPresentationController.h; sourceTree = "<group>"; };
+		112371B4237CFF1100435AAC /* OverlyPresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlyPresentationController.m; sourceTree = "<group>"; };
+		112371B6237CFFF800435AAC /* ZMModalTransitionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMModalTransitionDelegate.h; sourceTree = "<group>"; };
+		112371B7237CFFF800435AAC /* ZMModalTransitionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMModalTransitionDelegate.m; sourceTree = "<group>"; };
+		11F04B31237B969B0013E090 /* ViewController转场动画.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViewController转场动画.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11F04B34237B969B0013E090 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		11F04B35237B969B0013E090 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		11F04B40237B969D0013E090 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11F04B43237B969D0013E090 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		11F04B45237B969D0013E090 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11F04B46237B969D0013E090 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11F04B4F237B98AA0013E090 /* ZMNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMNavigationController.h; sourceTree = "<group>"; };
+		11F04B50237B98AA0013E090 /* ZMNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMNavigationController.m; sourceTree = "<group>"; };
+		11F04B52237B98B70013E090 /* HomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		11F04B53237B98B70013E090 /* HomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		11F04B55237B99290013E090 /* ZMBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMBaseViewController.h; sourceTree = "<group>"; };
+		11F04B56237B99290013E090 /* ZMBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMBaseViewController.m; sourceTree = "<group>"; };
+		11F04B58237B994A0013E090 /* OneViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OneViewController.h; sourceTree = "<group>"; };
+		11F04B59237B994A0013E090 /* OneViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OneViewController.m; sourceTree = "<group>"; };
+		11F04B5B237B99540013E090 /* TwoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TwoViewController.h; sourceTree = "<group>"; };
+		11F04B5C237B99540013E090 /* TwoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwoViewController.m; sourceTree = "<group>"; };
+		11F04B5F237B99B70013E090 /* UIImage+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		11F04B60237B99B70013E090 /* UIImage+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		11F04B62237B9C3B0013E090 /* UIColor+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		11F04B63237B9C3B0013E090 /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		9D5EAC24D43FB528A4BA25EF /* Pods_ViewController____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_ViewController____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A1C0996A2CCB5A00BD157D66 /* Pods-ViewController转场动画.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewController转场动画.debug.xcconfig"; path = "Target Support Files/Pods-ViewController转场动画/Pods-ViewController转场动画.debug.xcconfig"; sourceTree = "<group>"; };
+		D8215928FE2984FA72082F2C /* Pods-ViewController转场动画.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewController转场动画.release.xcconfig"; path = "Target Support Files/Pods-ViewController转场动画/Pods-ViewController转场动画.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11F04B2E237B969B0013E090 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		111C0218237BAD2700A82E24 /* TransitionAnimate */ = {
+			isa = PBXGroup;
+			children = (
+				111C0222237BE12D00A82E24 /* TransitionAnimateViewController.h */,
+				111C0223237BE12D00A82E24 /* TransitionAnimateViewController.m */,
+				111C0225237BE13D00A82E24 /* TransitionModel */,
+			);
+			path = TransitionAnimate;
+			sourceTree = "<group>";
+		};
+		111C0225237BE13D00A82E24 /* TransitionModel */ = {
+			isa = PBXGroup;
+			children = (
+				111C021C237BDA0500A82E24 /* AnimatedTransitioningObject.h */,
+				111C021D237BDA0500A82E24 /* AnimatedTransitioningObject.m */,
+				111C021F237BDA3200A82E24 /* InteractiveTransitioningObject.h */,
+				111C0220237BDA3200A82E24 /* InteractiveTransitioningObject.m */,
+			);
+			path = TransitionModel;
+			sourceTree = "<group>";
+		};
+		112371AC237CEA9C00435AAC /* VcTransitioning */ = {
+			isa = PBXGroup;
+			children = (
+				112371B6237CFFF800435AAC /* ZMModalTransitionDelegate.h */,
+				112371B7237CFFF800435AAC /* ZMModalTransitionDelegate.m */,
+				112371AD237CEAC200435AAC /* AnimatedTransitioning.h */,
+				112371AE237CEAC200435AAC /* AnimatedTransitioning.m */,
+				112371B0237CEAD600435AAC /* InteractiveTransitioning.h */,
+				112371B1237CEAD600435AAC /* InteractiveTransitioning.m */,
+				112371B3237CFF1100435AAC /* OverlyPresentationController.h */,
+				112371B4237CFF1100435AAC /* OverlyPresentationController.m */,
+			);
+			path = VcTransitioning;
+			sourceTree = "<group>";
+		};
+		11F04B28237B969B0013E090 = {
+			isa = PBXGroup;
+			children = (
+				11F04B33237B969B0013E090 /* ViewController转场动画 */,
+				11F04B32237B969B0013E090 /* Products */,
+				A0FD7032EA0692866C128E48 /* Pods */,
+				78F12AD706B47255475F5FCE /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		11F04B32237B969B0013E090 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11F04B31237B969B0013E090 /* ViewController转场动画.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11F04B33237B969B0013E090 /* ViewController转场动画 */ = {
+			isa = PBXGroup;
+			children = (
+				11F04B34237B969B0013E090 /* AppDelegate.h */,
+				11F04B35237B969B0013E090 /* AppDelegate.m */,
+				11F04B5E237B999A0013E090 /* Category */,
+				11F04B4E237B98780013E090 /* BaseVc */,
+				11F04B4D237B98630013E090 /* Controller */,
+				11F04B40237B969D0013E090 /* Assets.xcassets */,
+				11F04B42237B969D0013E090 /* LaunchScreen.storyboard */,
+				11F04B45237B969D0013E090 /* Info.plist */,
+				11F04B46237B969D0013E090 /* main.m */,
+			);
+			path = "ViewController转场动画";
+			sourceTree = "<group>";
+		};
+		11F04B4D237B98630013E090 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11F04B52237B98B70013E090 /* HomeViewController.h */,
+				11F04B53237B98B70013E090 /* HomeViewController.m */,
+				11F04B58237B994A0013E090 /* OneViewController.h */,
+				11F04B59237B994A0013E090 /* OneViewController.m */,
+				111C0218237BAD2700A82E24 /* TransitionAnimate */,
+				11F04B5B237B99540013E090 /* TwoViewController.h */,
+				11F04B5C237B99540013E090 /* TwoViewController.m */,
+				112371AC237CEA9C00435AAC /* VcTransitioning */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11F04B4E237B98780013E090 /* BaseVc */ = {
+			isa = PBXGroup;
+			children = (
+				11F04B4F237B98AA0013E090 /* ZMNavigationController.h */,
+				11F04B50237B98AA0013E090 /* ZMNavigationController.m */,
+				11F04B55237B99290013E090 /* ZMBaseViewController.h */,
+				11F04B56237B99290013E090 /* ZMBaseViewController.m */,
+			);
+			path = BaseVc;
+			sourceTree = "<group>";
+		};
+		11F04B5E237B999A0013E090 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				11F04B5F237B99B70013E090 /* UIImage+Extension.h */,
+				11F04B60237B99B70013E090 /* UIImage+Extension.m */,
+				11F04B62237B9C3B0013E090 /* UIColor+Extension.h */,
+				11F04B63237B9C3B0013E090 /* UIColor+Extension.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		78F12AD706B47255475F5FCE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D5EAC24D43FB528A4BA25EF /* Pods_ViewController____.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A0FD7032EA0692866C128E48 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A1C0996A2CCB5A00BD157D66 /* Pods-ViewController转场动画.debug.xcconfig */,
+				D8215928FE2984FA72082F2C /* Pods-ViewController转场动画.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11F04B30237B969B0013E090 /* ViewController转场动画 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11F04B4A237B969D0013E090 /* Build configuration list for PBXNativeTarget "ViewController转场动画" */;
+			buildPhases = (
+				91F7A09C88765F202A53C00C /* [CP] Check Pods Manifest.lock */,
+				11F04B2D237B969B0013E090 /* Sources */,
+				11F04B2E237B969B0013E090 /* Frameworks */,
+				11F04B2F237B969B0013E090 /* Resources */,
+				CD0E16092446CE09565A5729 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ViewController转场动画";
+			productName = "ViewController转场动画";
+			productReference = 11F04B31237B969B0013E090 /* ViewController转场动画.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11F04B29237B969B0013E090 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = czm;
+				TargetAttributes = {
+					11F04B30237B969B0013E090 = {
+						CreatedOnToolsVersion = 11.2;
+					};
+				};
+			};
+			buildConfigurationList = 11F04B2C237B969B0013E090 /* Build configuration list for PBXProject "ViewController转场动画" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 11F04B28237B969B0013E090;
+			productRefGroup = 11F04B32237B969B0013E090 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11F04B30237B969B0013E090 /* ViewController转场动画 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11F04B2F237B969B0013E090 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11F04B44237B969D0013E090 /* LaunchScreen.storyboard in Resources */,
+				11F04B41237B969D0013E090 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91F7A09C88765F202A53C00C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ViewController转场动画-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD0E16092446CE09565A5729 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViewController转场动画/Pods-ViewController转场动画-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViewController转场动画/Pods-ViewController转场动画-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViewController转场动画/Pods-ViewController转场动画-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11F04B2D237B969B0013E090 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				112371B8237CFFF800435AAC /* ZMModalTransitionDelegate.m in Sources */,
+				111C021E237BDA0500A82E24 /* AnimatedTransitioningObject.m in Sources */,
+				11F04B5D237B99540013E090 /* TwoViewController.m in Sources */,
+				112371AF237CEAC200435AAC /* AnimatedTransitioning.m in Sources */,
+				11F04B36237B969B0013E090 /* AppDelegate.m in Sources */,
+				112371B2237CEAD600435AAC /* InteractiveTransitioning.m in Sources */,
+				11F04B47237B969D0013E090 /* main.m in Sources */,
+				11F04B51237B98AA0013E090 /* ZMNavigationController.m in Sources */,
+				11F04B64237B9C3B0013E090 /* UIColor+Extension.m in Sources */,
+				11F04B5A237B994A0013E090 /* OneViewController.m in Sources */,
+				11F04B54237B98B70013E090 /* HomeViewController.m in Sources */,
+				111C0221237BDA3200A82E24 /* InteractiveTransitioningObject.m in Sources */,
+				112371B5237CFF1100435AAC /* OverlyPresentationController.m in Sources */,
+				11F04B57237B99290013E090 /* ZMBaseViewController.m in Sources */,
+				11F04B61237B99B70013E090 /* UIImage+Extension.m in Sources */,
+				111C0224237BE12D00A82E24 /* TransitionAnimateViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		11F04B42237B969D0013E090 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11F04B43237B969D0013E090 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11F04B48237B969D0013E090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		11F04B49237B969D0013E090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11F04B4B237B969D0013E090 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1C0996A2CCB5A00BD157D66 /* Pods-ViewController转场动画.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U6UNEH5N3U;
+				INFOPLIST_FILE = "ViewController转场动画/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.czm.test1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		11F04B4C237B969D0013E090 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D8215928FE2984FA72082F2C /* Pods-ViewController转场动画.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U6UNEH5N3U;
+				INFOPLIST_FILE = "ViewController转场动画/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.czm.test1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11F04B2C237B969B0013E090 /* Build configuration list for PBXProject "ViewController转场动画" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11F04B48237B969D0013E090 /* Debug */,
+				11F04B49237B969D0013E090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		11F04B4A237B969D0013E090 /* Build configuration list for PBXNativeTarget "ViewController转场动画" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11F04B4B237B969D0013E090 /* Debug */,
+				11F04B4C237B969D0013E090 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11F04B29237B969B0013E090 /* Project object */;
+}

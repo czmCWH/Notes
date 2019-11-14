@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		111B2D2F237A99080003B158 /* UIControl+Touch.m in Sources */ = {isa = PBXBuildFile; fileRef = 111B2D2E237A99080003B158 /* UIControl+Touch.m */; };
 		119B280A235574C300D874B5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 119B2809235574C300D874B5 /* AppDelegate.m */; };
 		119B280D235574C300D874B5 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 119B280C235574C300D874B5 /* SceneDelegate.m */; };
 		119B2810235574C300D874B5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 119B280F235574C300D874B5 /* ViewController.m */; };
@@ -37,6 +38,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		111B2D2D237A99080003B158 /* UIControl+Touch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIControl+Touch.h"; sourceTree = "<group>"; };
+		111B2D2E237A99080003B158 /* UIControl+Touch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIControl+Touch.m"; sourceTree = "<group>"; };
 		119B2805235574C300D874B5 /* 工具类的使用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "工具类的使用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		119B2808235574C300D874B5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		119B2809235574C300D874B5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -102,6 +105,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		111B2D2C237A98EF0003B158 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				111B2D2D237A99080003B158 /* UIControl+Touch.h */,
+				111B2D2E237A99080003B158 /* UIControl+Touch.m */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
 		119B27FC235574C300D874B5 = {
 			isa = PBXGroup;
 			children = (
@@ -159,6 +171,7 @@
 		11DCC38C2373F52700922106 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				111B2D2C237A98EF0003B158 /* UIControl */,
 				11DCC3AF2373FCCF00922106 /* UIApplication */,
 				11DCC3AB2373FC8800922106 /* UIWindow */,
 				11DCC3A72373FC0400922106 /* UIDevice */,
@@ -392,6 +405,7 @@
 				11DCC3D32374002800922106 /* NSMutableArray+Safe.m in Sources */,
 				11DCC39F2373F70600922106 /* UIImage+Code.m in Sources */,
 				11DCC3AA2373FC1A00922106 /* UIDevice+Info.m in Sources */,
+				111B2D2F237A99080003B158 /* UIControl+Touch.m in Sources */,
 				11DCC3D02373FFE200922106 /* NSArray+Safe.m in Sources */,
 				11DCC3C42373FEC900922106 /* NSError+Handle.m in Sources */,
 				11DCC3972373F63500922106 /* UIView+Location.m in Sources */,
