@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1148FD8D237E6C4B006957AD /* ZMTabBarDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148FD8C237E6C4B006957AD /* ZMTabBarDelegate.m */; };
+		1148FD90237E6D44006957AD /* ZMTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148FD8F237E6D44006957AD /* ZMTabBar.m */; };
+		1148FD94237E786C006957AD /* ZMTabBarControllerDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148FD93237E786C006957AD /* ZMTabBarControllerDelegate.m */; };
+		1148FD97237E80A6006957AD /* ZMTabBarInteractiveTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148FD96237E80A6006957AD /* ZMTabBarInteractiveTransitioning.m */; };
+		1148FD9A237E80EF006957AD /* ZMTabBarAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 1148FD99237E80EF006957AD /* ZMTabBarAnimatedTransitioning.m */; };
+		11D46CBE237E2E60008A9269 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D46CBD237E2E60008A9269 /* AppDelegate.m */; };
+		11D46CC9237E2E65008A9269 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11D46CC8237E2E65008A9269 /* Assets.xcassets */; };
+		11D46CCC237E2E65008A9269 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11D46CCA237E2E65008A9269 /* LaunchScreen.storyboard */; };
+		11D46CCF237E2E65008A9269 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D46CCE237E2E65008A9269 /* main.m */; };
+		11D46CF7237E305D008A9269 /* ZMBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D46CF6237E305D008A9269 /* ZMBasicViewController.m */; };
+		11D46CFA237E3079008A9269 /* ZMNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D46CF9237E3079008A9269 /* ZMNavigationController.m */; };
+		11D46CFD237E308F008A9269 /* ZMTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D46CFC237E308F008A9269 /* ZMTabBarController.m */; };
+		11D46D00237E30A9008A9269 /* ZMMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D46CFF237E30A9008A9269 /* ZMMainViewController.m */; };
+		11D46D03237E30BE008A9269 /* ZMFindViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D46D02237E30BE008A9269 /* ZMFindViewController.m */; };
+		11D46D06237E30E5008A9269 /* ZMMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D46D05237E30E5008A9269 /* ZMMineViewController.m */; };
+		11D46D0A237E31F9008A9269 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D46D09237E31F9008A9269 /* UIImage+Extension.m */; };
+		11D46D0E237E3222008A9269 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11D46D0D237E3222008A9269 /* UIColor+Extension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11264E51237E38C6004FD308 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.storyboard"; sourceTree = "<group>"; };
+		11264E57237E3B39004FD308 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1148FD8B237E6C4B006957AD /* ZMTabBarDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMTabBarDelegate.h; sourceTree = "<group>"; };
+		1148FD8C237E6C4B006957AD /* ZMTabBarDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMTabBarDelegate.m; sourceTree = "<group>"; };
+		1148FD8E237E6D44006957AD /* ZMTabBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMTabBar.h; sourceTree = "<group>"; };
+		1148FD8F237E6D44006957AD /* ZMTabBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMTabBar.m; sourceTree = "<group>"; };
+		1148FD92237E786C006957AD /* ZMTabBarControllerDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMTabBarControllerDelegate.h; sourceTree = "<group>"; };
+		1148FD93237E786C006957AD /* ZMTabBarControllerDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMTabBarControllerDelegate.m; sourceTree = "<group>"; };
+		1148FD95237E80A6006957AD /* ZMTabBarInteractiveTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMTabBarInteractiveTransitioning.h; sourceTree = "<group>"; };
+		1148FD96237E80A6006957AD /* ZMTabBarInteractiveTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMTabBarInteractiveTransitioning.m; sourceTree = "<group>"; };
+		1148FD98237E80EF006957AD /* ZMTabBarAnimatedTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMTabBarAnimatedTransitioning.h; sourceTree = "<group>"; };
+		1148FD99237E80EF006957AD /* ZMTabBarAnimatedTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMTabBarAnimatedTransitioning.m; sourceTree = "<group>"; };
+		11D46CB9237E2E60008A9269 /* UITabBarController的使用.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UITabBarController的使用.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		11D46CBC237E2E60008A9269 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		11D46CBD237E2E60008A9269 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		11D46CC8237E2E65008A9269 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		11D46CCE237E2E65008A9269 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		11D46CF5237E305D008A9269 /* ZMBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMBasicViewController.h; sourceTree = "<group>"; };
+		11D46CF6237E305D008A9269 /* ZMBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMBasicViewController.m; sourceTree = "<group>"; };
+		11D46CF8237E3079008A9269 /* ZMNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMNavigationController.h; sourceTree = "<group>"; };
+		11D46CF9237E3079008A9269 /* ZMNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMNavigationController.m; sourceTree = "<group>"; };
+		11D46CFB237E308F008A9269 /* ZMTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMTabBarController.h; sourceTree = "<group>"; };
+		11D46CFC237E308F008A9269 /* ZMTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMTabBarController.m; sourceTree = "<group>"; };
+		11D46CFE237E30A8008A9269 /* ZMMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMainViewController.h; sourceTree = "<group>"; };
+		11D46CFF237E30A9008A9269 /* ZMMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMainViewController.m; sourceTree = "<group>"; };
+		11D46D01237E30BE008A9269 /* ZMFindViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMFindViewController.h; sourceTree = "<group>"; };
+		11D46D02237E30BE008A9269 /* ZMFindViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMFindViewController.m; sourceTree = "<group>"; };
+		11D46D04237E30E5008A9269 /* ZMMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMMineViewController.h; sourceTree = "<group>"; };
+		11D46D05237E30E5008A9269 /* ZMMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMMineViewController.m; sourceTree = "<group>"; };
+		11D46D08237E31F9008A9269 /* UIImage+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		11D46D09237E31F9008A9269 /* UIImage+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		11D46D0C237E3222008A9269 /* UIColor+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
+		11D46D0D237E3222008A9269 /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		11D46D17237E34A4008A9269 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		11D46CB6237E2E60008A9269 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1148FD91237E7834006957AD /* TabBarControllerDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				1148FD92237E786C006957AD /* ZMTabBarControllerDelegate.h */,
+				1148FD93237E786C006957AD /* ZMTabBarControllerDelegate.m */,
+				1148FD95237E80A6006957AD /* ZMTabBarInteractiveTransitioning.h */,
+				1148FD96237E80A6006957AD /* ZMTabBarInteractiveTransitioning.m */,
+				1148FD98237E80EF006957AD /* ZMTabBarAnimatedTransitioning.h */,
+				1148FD99237E80EF006957AD /* ZMTabBarAnimatedTransitioning.m */,
+			);
+			path = TabBarControllerDelegate;
+			sourceTree = "<group>";
+		};
+		11D46CB0237E2E60008A9269 = {
+			isa = PBXGroup;
+			children = (
+				11D46CBB237E2E60008A9269 /* UITabBarController的使用 */,
+				11D46CBA237E2E60008A9269 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		11D46CBA237E2E60008A9269 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				11D46CB9237E2E60008A9269 /* UITabBarController的使用.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		11D46CBB237E2E60008A9269 /* UITabBarController的使用 */ = {
+			isa = PBXGroup;
+			children = (
+				11D46CD5237E2E8F008A9269 /* AppDelegate */,
+				11D46CD6237E2EA2008A9269 /* Classess */,
+				11D46CD7237E2EF6008A9269 /* Supporting Files */,
+			);
+			path = "UITabBarController的使用";
+			sourceTree = "<group>";
+		};
+		11D46CD5237E2E8F008A9269 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				11D46CBC237E2E60008A9269 /* AppDelegate.h */,
+				11D46CBD237E2E60008A9269 /* AppDelegate.m */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		11D46CD6237E2EA2008A9269 /* Classess */ = {
+			isa = PBXGroup;
+			children = (
+				11D46CDB237E2F3C008A9269 /* Basic */,
+				11D46CD8237E2F19008A9269 /* Main */,
+				11D46CD9237E2F29008A9269 /* Find */,
+				11D46CDA237E2F2F008A9269 /* Me */,
+				11D46CF2237E2FFA008A9269 /* Other */,
+			);
+			path = Classess;
+			sourceTree = "<group>";
+		};
+		11D46CD7237E2EF6008A9269 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				11D46CC8237E2E65008A9269 /* Assets.xcassets */,
+				11D46CCA237E2E65008A9269 /* LaunchScreen.storyboard */,
+				11D46CCE237E2E65008A9269 /* main.m */,
+				11264E57237E3B39004FD308 /* Info.plist */,
+				11D46D17237E34A4008A9269 /* PrefixHeader.pch */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		11D46CD8237E2F19008A9269 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				11D46CDC237E2F4B008A9269 /* Controller */,
+				11D46CDE237E2F6B008A9269 /* Model */,
+				11D46CDD237E2F64008A9269 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		11D46CD9237E2F29008A9269 /* Find */ = {
+			isa = PBXGroup;
+			children = (
+				11D46CDF237E2F73008A9269 /* Controller */,
+				11D46CE1237E2F7E008A9269 /* Model */,
+				11D46CE0237E2F79008A9269 /* View */,
+			);
+			path = Find;
+			sourceTree = "<group>";
+		};
+		11D46CDA237E2F2F008A9269 /* Me */ = {
+			isa = PBXGroup;
+			children = (
+				11D46CE2237E2F87008A9269 /* Controller */,
+				11D46CE5237E2F9A008A9269 /* Model */,
+				11D46CE4237E2F95008A9269 /* View */,
+			);
+			path = Me;
+			sourceTree = "<group>";
+		};
+		11D46CDB237E2F3C008A9269 /* Basic */ = {
+			isa = PBXGroup;
+			children = (
+				1148FD91237E7834006957AD /* TabBarControllerDelegate */,
+				11D46CFB237E308F008A9269 /* ZMTabBarController.h */,
+				11D46CFC237E308F008A9269 /* ZMTabBarController.m */,
+				11D46CF8237E3079008A9269 /* ZMNavigationController.h */,
+				11D46CF9237E3079008A9269 /* ZMNavigationController.m */,
+				11D46CF5237E305D008A9269 /* ZMBasicViewController.h */,
+				11D46CF6237E305D008A9269 /* ZMBasicViewController.m */,
+				1148FD8E237E6D44006957AD /* ZMTabBar.h */,
+				1148FD8F237E6D44006957AD /* ZMTabBar.m */,
+				1148FD8B237E6C4B006957AD /* ZMTabBarDelegate.h */,
+				1148FD8C237E6C4B006957AD /* ZMTabBarDelegate.m */,
+			);
+			path = Basic;
+			sourceTree = "<group>";
+		};
+		11D46CDC237E2F4B008A9269 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11D46CFE237E30A8008A9269 /* ZMMainViewController.h */,
+				11D46CFF237E30A9008A9269 /* ZMMainViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11D46CDD237E2F64008A9269 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11D46CDE237E2F6B008A9269 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11D46CDF237E2F73008A9269 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11D46D01237E30BE008A9269 /* ZMFindViewController.h */,
+				11D46D02237E30BE008A9269 /* ZMFindViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11D46CE0237E2F79008A9269 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11D46CE1237E2F7E008A9269 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11D46CE2237E2F87008A9269 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				11D46D04237E30E5008A9269 /* ZMMineViewController.h */,
+				11D46D05237E30E5008A9269 /* ZMMineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		11D46CE4237E2F95008A9269 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		11D46CE5237E2F9A008A9269 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		11D46CF2237E2FFA008A9269 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				11D46CF4237E3005008A9269 /* Category */,
+				11D46CF3237E3000008A9269 /* Tools */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		11D46CF3237E3000008A9269 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		11D46CF4237E3005008A9269 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				11D46D0B237E3212008A9269 /* UIColor */,
+				11D46D07237E31E8008A9269 /* UIImage */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		11D46D07237E31E8008A9269 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				11D46D08237E31F9008A9269 /* UIImage+Extension.h */,
+				11D46D09237E31F9008A9269 /* UIImage+Extension.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		11D46D0B237E3212008A9269 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				11D46D0C237E3222008A9269 /* UIColor+Extension.h */,
+				11D46D0D237E3222008A9269 /* UIColor+Extension.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		11D46CB8237E2E60008A9269 /* UITabBarController的使用 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 11D46CD2237E2E65008A9269 /* Build configuration list for PBXNativeTarget "UITabBarController的使用" */;
+			buildPhases = (
+				11D46CB5237E2E60008A9269 /* Sources */,
+				11D46CB6237E2E60008A9269 /* Frameworks */,
+				11D46CB7237E2E60008A9269 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UITabBarController的使用";
+			productName = "UITabBarController的使用";
+			productReference = 11D46CB9237E2E60008A9269 /* UITabBarController的使用.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		11D46CB1237E2E60008A9269 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = ZM;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = czm;
+				TargetAttributes = {
+					11D46CB8237E2E60008A9269 = {
+						CreatedOnToolsVersion = 11.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 11D46CB4237E2E60008A9269 /* Build configuration list for PBXProject "UITabBarController的使用" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				"zh-Hans",
+			);
+			mainGroup = 11D46CB0237E2E60008A9269;
+			productRefGroup = 11D46CBA237E2E60008A9269 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				11D46CB8237E2E60008A9269 /* UITabBarController的使用 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		11D46CB7237E2E60008A9269 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D46CCC237E2E65008A9269 /* LaunchScreen.storyboard in Resources */,
+				11D46CC9237E2E65008A9269 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		11D46CB5237E2E60008A9269 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				11D46D06237E30E5008A9269 /* ZMMineViewController.m in Sources */,
+				1148FD8D237E6C4B006957AD /* ZMTabBarDelegate.m in Sources */,
+				11D46D03237E30BE008A9269 /* ZMFindViewController.m in Sources */,
+				1148FD97237E80A6006957AD /* ZMTabBarInteractiveTransitioning.m in Sources */,
+				11D46D00237E30A9008A9269 /* ZMMainViewController.m in Sources */,
+				11D46CBE237E2E60008A9269 /* AppDelegate.m in Sources */,
+				1148FD9A237E80EF006957AD /* ZMTabBarAnimatedTransitioning.m in Sources */,
+				11D46CCF237E2E65008A9269 /* main.m in Sources */,
+				11D46CFA237E3079008A9269 /* ZMNavigationController.m in Sources */,
+				11D46D0A237E31F9008A9269 /* UIImage+Extension.m in Sources */,
+				1148FD90237E6D44006957AD /* ZMTabBar.m in Sources */,
+				11D46D0E237E3222008A9269 /* UIColor+Extension.m in Sources */,
+				1148FD94237E786C006957AD /* ZMTabBarControllerDelegate.m in Sources */,
+				11D46CFD237E308F008A9269 /* ZMTabBarController.m in Sources */,
+				11D46CF7237E305D008A9269 /* ZMBasicViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		11D46CCA237E2E65008A9269 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				11264E51237E38C6004FD308 /* zh-Hans */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		11D46CD0237E2E65008A9269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		11D46CD1237E2E65008A9269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		11D46CD3237E2E65008A9269 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U6UNEH5N3U;
+				INFOPLIST_FILE = "UITabBarController的使用/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.czm.test1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		11D46CD4237E2E65008A9269 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = U6UNEH5N3U;
+				INFOPLIST_FILE = "UITabBarController的使用/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.czm.test1;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		11D46CB4237E2E60008A9269 /* Build configuration list for PBXProject "UITabBarController的使用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11D46CD0237E2E65008A9269 /* Debug */,
+				11D46CD1237E2E65008A9269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		11D46CD2237E2E65008A9269 /* Build configuration list for PBXNativeTarget "UITabBarController的使用" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				11D46CD3237E2E65008A9269 /* Debug */,
+				11D46CD4237E2E65008A9269 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 11D46CB1237E2E60008A9269 /* Project object */;
+}
