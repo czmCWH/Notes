@@ -12,6 +12,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ZMTabBarControllerDelegate : NSObject<UITabBarControllerDelegate>
 
+@property (nonatomic, assign)BOOL interactive;
+@property (nonatomic, strong)UIPercentDrivenInteractiveTransition *interactiveTransition;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -41,6 +41,8 @@
     //添加左右滑动手势pan
     UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(handlePan:)];
     [self.view addGestureRecognizer:pan];
+    
+    
 }
 
 - (void)setupAddChildControllers {
@@ -70,7 +72,7 @@
     NSArray <NSString *>*norImg = @[@"icon_tab_home_nor", @"icon_tab_more_nor", @"icon_tab_my_nor"];
     NSArray <NSString *>*selImg = @[@"icon_tab_home_pre", @"icon_tab_more_pre", @"icon_tab_my_pre"];
     
-    NSDictionary *norTextAttri = @{NSForegroundColorAttributeName:[UIColor grayColor], NSFontAttributeName: [UIFont systemFontOfSize:10]};
+    NSDictionary *norTextAttri = @{NSForegroundColorAttributeName:[UIColor darkGrayColor], NSFontAttributeName: [UIFont systemFontOfSize:10]};
     NSDictionary *selTextAttri = @{NSForegroundColorAttributeName:[UIColor blackColor], NSFontAttributeName: [UIFont systemFontOfSize:10]};
     
     [self.childViewControllers enumerateObjectsUsingBlock:^(__kindof UIViewController * _Nonnull vc, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -112,6 +114,57 @@
 
 - (void)handlePan:(UIPanGestureRecognizer *)recongizer {
     
+    CGFloat translationX = [recongizer translationInView:self.view].x;
+    CGFloat translationAbs = translationX > 0 ? translationX : -translationX;
+    CGFloat progress = translationAbs / self.view.frame.size.width;
+    
+    switch (recongizer.state) {
+        case UIGestureRecognizerStateBegan:
+        {
+            self.tabBarVCDelegate.interactive = YES;
+            CGFloat velocityX = [recongizer velocityInView:self.view].x;
+            if (velocityX < 0) {
+                if (self.selectedIndex < self.viewControllers.count - 1) {
+                    self.selectedIndex += 1;
+                }
+            } else {
+                if (self.selectedIndex > 0) {
+                    self.selectedIndex -= 1;
+                }
+            }
+            break;
+        }
+        case UIGestureRecognizerStateChanged:
+        {
+            [self.tabBarVCDelegate.interactiveTransition updateInteractiveTransition:progress];
+            break;
+        }
+        case UIGestureRecognizerStateEnded:
+        {
+            [self recognizeStateEndCancel:progress];
+            break;
+        }
+        case UIGestureRecognizerStateCancelled:
+        {
+            
+            [self recognizeStateEndCancel:progress];
+            break;
+        }
+        default:
+            break;
+    }
+    
+}
+
+- (void)recognizeStateEndCancel:(CGFloat)progress {
+    if (progress > 0.3) {
+        self.tabBarVCDelegate.interactiveTransition.completionSpeed = 0.99;
+        [self.tabBarVCDelegate.interactiveTransition finishInteractiveTransition];
+    } else {
+        self.tabBarVCDelegate.interactiveTransition.completionSpeed = 0.99;
+        [self.tabBarVCDelegate.interactiveTransition cancelInteractiveTransition];
+    }
+    self.tabBarVCDelegate.interactive = NO;
 }
 
 - (ZMTabBarControllerDelegate *)tabBarVCDelegate {

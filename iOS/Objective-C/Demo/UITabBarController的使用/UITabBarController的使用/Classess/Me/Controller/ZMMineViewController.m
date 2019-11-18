@@ -18,6 +18,7 @@
     [super viewDidLoad];
     self.navigationItem.title = @"我的";
     
+    self.view.backgroundColor = [UIColor colorWithHex:0xA8FFB7];
 }
 
 

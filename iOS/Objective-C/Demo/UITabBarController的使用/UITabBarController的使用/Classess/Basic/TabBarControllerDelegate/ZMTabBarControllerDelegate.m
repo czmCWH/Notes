@@ -10,7 +10,21 @@
 #import "ZMTabBarInteractiveTransitioning.h"
 #import "ZMTabBarAnimatedTransitioning.h"
 
+@interface ZMTabBarControllerDelegate ()
+
+
+
+@end
+
 @implementation ZMTabBarControllerDelegate
+
+- (instancetype)init {
+    if (self = [super init]) {
+        self.interactive = NO;
+        self.interactiveTransition = [[UIPercentDrivenInteractiveTransition alloc] init];
+    }
+    return self;
+}
 
 #pragma mark - UITabBarControllerDelegate
 //- (BOOL)tabBarController:(UITabBarController *)tabBarController shouldSelectViewController:(UIViewController *)viewController API_AVAILABLE(ios(3.0));
@@ -41,13 +55,24 @@
 
 - (nullable id <UIViewControllerInteractiveTransitioning>)tabBarController:(UITabBarController *)tabBarController
 interactionControllerForAnimationController: (id <UIViewControllerAnimatedTransitioning>)animationController {
-    return [[ZMTabBarInteractiveTransitioning alloc] init];
+    return self.interactive ? self.interactiveTransition : nil;
 }
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)tabBarController:(UITabBarController *)tabBarController
             animationControllerForTransitionFromViewController:(UIViewController *)fromVC
 toViewController:(UIViewController *)toVC {
-    return [[ZMTabBarAnimatedTransitioning alloc] init];
+    
+    if (self.interactive) {
+        NSInteger fromIndx = [tabBarController.viewControllers indexOfObject:fromVC];
+        NSInteger toIndx = [tabBarController.viewControllers indexOfObject:toVC];
+        
+        // 获取转场的方向
+        TabBarVcChangeDirection direction = toIndx < fromIndx ? TabBarVcChangeDirectionLeft : TabBarVcChangeDirectionRight;
+        
+        return [[ZMTabBarAnimatedTransitioning alloc] initWithDirection:direction];
+    } else {
+        return nil;
+    }
 }
 
 @end

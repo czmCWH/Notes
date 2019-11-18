@@ -10,7 +10,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef enum : NSUInteger {
+    TabBarVcChangeDirectionLeft,
+    TabBarVcChangeDirectionRight,
+} TabBarVcChangeDirection;
+
 @interface ZMTabBarAnimatedTransitioning : NSObject<UIViewControllerAnimatedTransitioning>
+
+- (instancetype)initWithDirection:(TabBarVcChangeDirection)direction;
 
 @end
 

@@ -18,6 +18,7 @@
     [super viewDidLoad];
     self.navigationItem.title = @"发现";
     
+    self.view.backgroundColor = [UIColor colorWithHex:0xFFFFAB];
 }
 
 @end
