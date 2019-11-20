@@ -1,8 +1,8 @@
 //
-//  HomeViewController.h
+//  ThreeViewController.h
 //  ViewController转场动画
 //
-//  Created by czm on 2019/11/13.
+//  Created by czm on 2019/11/19.
 //  Copyright © 2019 czm. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HomeViewController : ZMBaseViewController
+@interface ThreeViewController : ZMBaseViewController
 
 @end
 

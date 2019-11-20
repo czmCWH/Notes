@@ -6,6 +6,12 @@
 //  Copyright © 2019 czm. All rights reserved.
 //
 
+/**
+ 参考博客：
+    http://blog.devtang.com/2016/03/13/iOS-transition-guide/#Chapter2.4.2
+    https://github.com/seedante/iOS-Note/wiki/ViewController-Transition
+ */
+
 #import "AppDelegate.h"
 
 #import "ZMTabBarController.h"

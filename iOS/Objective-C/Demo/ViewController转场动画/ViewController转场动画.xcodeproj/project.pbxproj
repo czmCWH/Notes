@@ -7,13 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		111C021E237BDA0500A82E24 /* AnimatedTransitioningObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 111C021D237BDA0500A82E24 /* AnimatedTransitioningObject.m */; };
-		111C0221237BDA3200A82E24 /* InteractiveTransitioningObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 111C0220237BDA3200A82E24 /* InteractiveTransitioningObject.m */; };
-		111C0224237BE12D00A82E24 /* TransitionAnimateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 111C0223237BE12D00A82E24 /* TransitionAnimateViewController.m */; };
 		112371AF237CEAC200435AAC /* AnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 112371AE237CEAC200435AAC /* AnimatedTransitioning.m */; };
-		112371B2237CEAD600435AAC /* InteractiveTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 112371B1237CEAD600435AAC /* InteractiveTransitioning.m */; };
 		112371B5237CFF1100435AAC /* OverlyPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 112371B4237CFF1100435AAC /* OverlyPresentationController.m */; };
 		112371B8237CFFF800435AAC /* ZMModalTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 112371B7237CFFF800435AAC /* ZMModalTransitionDelegate.m */; };
+		113F188023850C8B00B61DDE /* ZMNavigationTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 113F187F23850C8B00B61DDE /* ZMNavigationTransitionDelegate.m */; };
+		113F188323850DFA00B61DDE /* ZMNavigationAnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 113F188223850DFA00B61DDE /* ZMNavigationAnimatedTransitioning.m */; };
 		11F04B36237B969B0013E090 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04B35237B969B0013E090 /* AppDelegate.m */; };
 		11F04B41237B969D0013E090 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11F04B40237B969D0013E090 /* Assets.xcassets */; };
 		11F04B44237B969D0013E090 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11F04B42237B969D0013E090 /* LaunchScreen.storyboard */; };
@@ -25,23 +23,23 @@
 		11F04B5D237B99540013E090 /* TwoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04B5C237B99540013E090 /* TwoViewController.m */; };
 		11F04B61237B99B70013E090 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04B60237B99B70013E090 /* UIImage+Extension.m */; };
 		11F04B64237B9C3B0013E090 /* UIColor+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F04B63237B9C3B0013E090 /* UIColor+Extension.m */; };
+		11F7DAFA2383BACD00769DF5 /* ThreeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F7DAF92383BACD00769DF5 /* ThreeViewController.m */; };
+		11F7DAFE2383BCAA00769DF5 /* ThreeAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F7DAFD2383BCAA00769DF5 /* ThreeAnimator.m */; };
+		11F7DB012383BD5300769DF5 /* ThreePresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F7DB002383BD5300769DF5 /* ThreePresentationController.m */; };
+		11F7DB042383C50A00769DF5 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F7DB032383C50A00769DF5 /* UIView+Extension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		111C021C237BDA0500A82E24 /* AnimatedTransitioningObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimatedTransitioningObject.h; sourceTree = "<group>"; };
-		111C021D237BDA0500A82E24 /* AnimatedTransitioningObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimatedTransitioningObject.m; sourceTree = "<group>"; };
-		111C021F237BDA3200A82E24 /* InteractiveTransitioningObject.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractiveTransitioningObject.h; sourceTree = "<group>"; };
-		111C0220237BDA3200A82E24 /* InteractiveTransitioningObject.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractiveTransitioningObject.m; sourceTree = "<group>"; };
-		111C0222237BE12D00A82E24 /* TransitionAnimateViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TransitionAnimateViewController.h; sourceTree = "<group>"; };
-		111C0223237BE12D00A82E24 /* TransitionAnimateViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TransitionAnimateViewController.m; sourceTree = "<group>"; };
 		112371AD237CEAC200435AAC /* AnimatedTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimatedTransitioning.h; sourceTree = "<group>"; };
 		112371AE237CEAC200435AAC /* AnimatedTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimatedTransitioning.m; sourceTree = "<group>"; };
-		112371B0237CEAD600435AAC /* InteractiveTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = InteractiveTransitioning.h; sourceTree = "<group>"; };
-		112371B1237CEAD600435AAC /* InteractiveTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InteractiveTransitioning.m; sourceTree = "<group>"; };
 		112371B3237CFF1100435AAC /* OverlyPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OverlyPresentationController.h; sourceTree = "<group>"; };
 		112371B4237CFF1100435AAC /* OverlyPresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OverlyPresentationController.m; sourceTree = "<group>"; };
 		112371B6237CFFF800435AAC /* ZMModalTransitionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMModalTransitionDelegate.h; sourceTree = "<group>"; };
 		112371B7237CFFF800435AAC /* ZMModalTransitionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMModalTransitionDelegate.m; sourceTree = "<group>"; };
+		113F187E23850C8B00B61DDE /* ZMNavigationTransitionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMNavigationTransitionDelegate.h; sourceTree = "<group>"; };
+		113F187F23850C8B00B61DDE /* ZMNavigationTransitionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMNavigationTransitionDelegate.m; sourceTree = "<group>"; };
+		113F188123850DFA00B61DDE /* ZMNavigationAnimatedTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMNavigationAnimatedTransitioning.h; sourceTree = "<group>"; };
+		113F188223850DFA00B61DDE /* ZMNavigationAnimatedTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMNavigationAnimatedTransitioning.m; sourceTree = "<group>"; };
 		11F04B31237B969B0013E090 /* ViewController转场动画.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViewController转场动画.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F04B34237B969B0013E090 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11F04B35237B969B0013E090 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -63,6 +61,14 @@
 		11F04B60237B99B70013E090 /* UIImage+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
 		11F04B62237B9C3B0013E090 /* UIColor+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+Extension.h"; sourceTree = "<group>"; };
 		11F04B63237B9C3B0013E090 /* UIColor+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Extension.m"; sourceTree = "<group>"; };
+		11F7DAF82383BACD00769DF5 /* ThreeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeViewController.h; sourceTree = "<group>"; };
+		11F7DAF92383BACD00769DF5 /* ThreeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeViewController.m; sourceTree = "<group>"; };
+		11F7DAFC2383BCAA00769DF5 /* ThreeAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreeAnimator.h; sourceTree = "<group>"; };
+		11F7DAFD2383BCAA00769DF5 /* ThreeAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreeAnimator.m; sourceTree = "<group>"; };
+		11F7DAFF2383BD5300769DF5 /* ThreePresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ThreePresentationController.h; sourceTree = "<group>"; };
+		11F7DB002383BD5300769DF5 /* ThreePresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreePresentationController.m; sourceTree = "<group>"; };
+		11F7DB022383C50A00769DF5 /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		11F7DB032383C50A00769DF5 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		9D5EAC24D43FB528A4BA25EF /* Pods_ViewController____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_ViewController____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C0996A2CCB5A00BD157D66 /* Pods-ViewController转场动画.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewController转场动画.debug.xcconfig"; path = "Target Support Files/Pods-ViewController转场动画/Pods-ViewController转场动画.debug.xcconfig"; sourceTree = "<group>"; };
 		D8215928FE2984FA72082F2C /* Pods-ViewController转场动画.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewController转场动画.release.xcconfig"; path = "Target Support Files/Pods-ViewController转场动画/Pods-ViewController转场动画.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,22 +88,12 @@
 		111C0218237BAD2700A82E24 /* TransitionAnimate */ = {
 			isa = PBXGroup;
 			children = (
-				111C0222237BE12D00A82E24 /* TransitionAnimateViewController.h */,
-				111C0223237BE12D00A82E24 /* TransitionAnimateViewController.m */,
-				111C0225237BE13D00A82E24 /* TransitionModel */,
+				113F187E23850C8B00B61DDE /* ZMNavigationTransitionDelegate.h */,
+				113F187F23850C8B00B61DDE /* ZMNavigationTransitionDelegate.m */,
+				113F188123850DFA00B61DDE /* ZMNavigationAnimatedTransitioning.h */,
+				113F188223850DFA00B61DDE /* ZMNavigationAnimatedTransitioning.m */,
 			);
 			path = TransitionAnimate;
-			sourceTree = "<group>";
-		};
-		111C0225237BE13D00A82E24 /* TransitionModel */ = {
-			isa = PBXGroup;
-			children = (
-				111C021C237BDA0500A82E24 /* AnimatedTransitioningObject.h */,
-				111C021D237BDA0500A82E24 /* AnimatedTransitioningObject.m */,
-				111C021F237BDA3200A82E24 /* InteractiveTransitioningObject.h */,
-				111C0220237BDA3200A82E24 /* InteractiveTransitioningObject.m */,
-			);
-			path = TransitionModel;
 			sourceTree = "<group>";
 		};
 		112371AC237CEA9C00435AAC /* VcTransitioning */ = {
@@ -107,8 +103,6 @@
 				112371B7237CFFF800435AAC /* ZMModalTransitionDelegate.m */,
 				112371AD237CEAC200435AAC /* AnimatedTransitioning.h */,
 				112371AE237CEAC200435AAC /* AnimatedTransitioning.m */,
-				112371B0237CEAD600435AAC /* InteractiveTransitioning.h */,
-				112371B1237CEAD600435AAC /* InteractiveTransitioning.m */,
 				112371B3237CFF1100435AAC /* OverlyPresentationController.h */,
 				112371B4237CFF1100435AAC /* OverlyPresentationController.m */,
 			);
@@ -154,12 +148,10 @@
 			children = (
 				11F04B52237B98B70013E090 /* HomeViewController.h */,
 				11F04B53237B98B70013E090 /* HomeViewController.m */,
-				11F04B58237B994A0013E090 /* OneViewController.h */,
-				11F04B59237B994A0013E090 /* OneViewController.m */,
-				111C0218237BAD2700A82E24 /* TransitionAnimate */,
-				11F04B5B237B99540013E090 /* TwoViewController.h */,
-				11F04B5C237B99540013E090 /* TwoViewController.m */,
-				112371AC237CEA9C00435AAC /* VcTransitioning */,
+				11F7DAF42383BA1900769DF5 /* One */,
+				11F7DAF52383BA2300769DF5 /* Two */,
+				11F7DAF62383BA2D00769DF5 /* Three */,
+				11F7DAF72383BA3D00769DF5 /* Four */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -178,12 +170,62 @@
 		11F04B5E237B999A0013E090 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				11F7DB022383C50A00769DF5 /* UIView+Extension.h */,
+				11F7DB032383C50A00769DF5 /* UIView+Extension.m */,
 				11F04B5F237B99B70013E090 /* UIImage+Extension.h */,
 				11F04B60237B99B70013E090 /* UIImage+Extension.m */,
 				11F04B62237B9C3B0013E090 /* UIColor+Extension.h */,
 				11F04B63237B9C3B0013E090 /* UIColor+Extension.m */,
 			);
 			path = Category;
+			sourceTree = "<group>";
+		};
+		11F7DAF42383BA1900769DF5 /* One */ = {
+			isa = PBXGroup;
+			children = (
+				11F04B58237B994A0013E090 /* OneViewController.h */,
+				11F04B59237B994A0013E090 /* OneViewController.m */,
+				111C0218237BAD2700A82E24 /* TransitionAnimate */,
+			);
+			path = One;
+			sourceTree = "<group>";
+		};
+		11F7DAF52383BA2300769DF5 /* Two */ = {
+			isa = PBXGroup;
+			children = (
+				11F04B5B237B99540013E090 /* TwoViewController.h */,
+				11F04B5C237B99540013E090 /* TwoViewController.m */,
+				112371AC237CEA9C00435AAC /* VcTransitioning */,
+			);
+			path = Two;
+			sourceTree = "<group>";
+		};
+		11F7DAF62383BA2D00769DF5 /* Three */ = {
+			isa = PBXGroup;
+			children = (
+				11F7DAFB2383BAE500769DF5 /* TransitionAnimate */,
+				11F7DAF82383BACD00769DF5 /* ThreeViewController.h */,
+				11F7DAF92383BACD00769DF5 /* ThreeViewController.m */,
+			);
+			path = Three;
+			sourceTree = "<group>";
+		};
+		11F7DAF72383BA3D00769DF5 /* Four */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Four;
+			sourceTree = "<group>";
+		};
+		11F7DAFB2383BAE500769DF5 /* TransitionAnimate */ = {
+			isa = PBXGroup;
+			children = (
+				11F7DAFC2383BCAA00769DF5 /* ThreeAnimator.h */,
+				11F7DAFD2383BCAA00769DF5 /* ThreeAnimator.m */,
+				11F7DAFF2383BD5300769DF5 /* ThreePresentationController.h */,
+				11F7DB002383BD5300769DF5 /* ThreePresentationController.m */,
+			);
+			path = TransitionAnimate;
 			sourceTree = "<group>";
 		};
 		78F12AD706B47255475F5FCE /* Frameworks */ = {
@@ -317,21 +359,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				112371B8237CFFF800435AAC /* ZMModalTransitionDelegate.m in Sources */,
-				111C021E237BDA0500A82E24 /* AnimatedTransitioningObject.m in Sources */,
 				11F04B5D237B99540013E090 /* TwoViewController.m in Sources */,
 				112371AF237CEAC200435AAC /* AnimatedTransitioning.m in Sources */,
 				11F04B36237B969B0013E090 /* AppDelegate.m in Sources */,
-				112371B2237CEAD600435AAC /* InteractiveTransitioning.m in Sources */,
 				11F04B47237B969D0013E090 /* main.m in Sources */,
 				11F04B51237B98AA0013E090 /* ZMNavigationController.m in Sources */,
 				11F04B64237B9C3B0013E090 /* UIColor+Extension.m in Sources */,
 				11F04B5A237B994A0013E090 /* OneViewController.m in Sources */,
+				11F7DB042383C50A00769DF5 /* UIView+Extension.m in Sources */,
+				11F7DB012383BD5300769DF5 /* ThreePresentationController.m in Sources */,
+				11F7DAFA2383BACD00769DF5 /* ThreeViewController.m in Sources */,
 				11F04B54237B98B70013E090 /* HomeViewController.m in Sources */,
-				111C0221237BDA3200A82E24 /* InteractiveTransitioningObject.m in Sources */,
+				113F188323850DFA00B61DDE /* ZMNavigationAnimatedTransitioning.m in Sources */,
+				11F7DAFE2383BCAA00769DF5 /* ThreeAnimator.m in Sources */,
 				112371B5237CFF1100435AAC /* OverlyPresentationController.m in Sources */,
+				113F188023850C8B00B61DDE /* ZMNavigationTransitionDelegate.m in Sources */,
 				11F04B57237B99290013E090 /* ZMBaseViewController.m in Sources */,
 				11F04B61237B99B70013E090 /* UIImage+Extension.m in Sources */,
-				111C0224237BE12D00A82E24 /* TransitionAnimateViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +510,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U6UNEH5N3U;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = "ViewController转场动画/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -485,6 +530,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U6UNEH5N3U;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = "ViewController转场动画/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (

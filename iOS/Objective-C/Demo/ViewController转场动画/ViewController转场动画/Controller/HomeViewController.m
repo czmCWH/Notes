@@ -8,15 +8,14 @@
 
 #import "HomeViewController.h"
 #import "OneViewController.h"
+
 #import "TwoViewController.h"
-
-#import "ZMModalTransitionDelegate.h"
-
+#import "ThreeViewController.h"
 
 @interface HomeViewController ()<UITableViewDelegate, UITableViewDataSource>
 
 @property (nonatomic, strong)UITableView *tableView;
-@property (nonatomic, strong)ZMModalTransitionDelegate *modalDelagte;
+@property (nonatomic, strong)NSArray <NSString *>*titleArr;
 
 @end
 
@@ -26,13 +25,8 @@
     [super viewDidLoad];
     
     self.navigationItem.title = @"首页";
-    NSLog(@"push");
     [self.view addSubview:self.tableView];
     
-    
-    
-    
-    // UIViewControllerTransitioningDelegate
 }
 
 - (void)viewWillLayoutSubviews {
@@ -42,7 +36,7 @@
 
 #pragma mark - UITableViewDataSource
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 5;
+    return self.titleArr.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -51,7 +45,8 @@
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellId];
     }
-    cell.textLabel.text = [NSString stringWithFormat:@"第 %ld 行", (long)indexPath.row];
+    cell.textLabel.numberOfLines = 0;
+    cell.textLabel.text = self.titleArr[indexPath.row];
     cell.textLabel.textColor = [UIColor blackColor];
     cell.backgroundColor = [UIColor whiteColor];
     return cell;
@@ -63,33 +58,24 @@
     
     if (indexPath.row == 0) {
         
+        // 参考于：https://github.com/sundayios/WSLTransferAnimation-master
+        
         OneViewController *one = [[OneViewController alloc] init];
         // 可以通过该代理，对UINavigationController管理的对象进行push 或 pop 时，修改他们的行为
-        self.navigationController.delegate = self;
+        self.navigationController.delegate = one.transitionDelegate;
         [self.navigationController pushViewController:one animated:YES];
         
     } else if (indexPath.row == 1) {
         
-        
+        // 参考于：https://github.com/cnthinkcode/HSPresentTransitionDemo
         
         TwoViewController *two = [[TwoViewController alloc] init];
-        
-        // 模态呈现VC在屏幕上显示的样式
-//        two.modalPresentationStyle = UIModalPresentationCustom;
-        // 模态呈现VC时使用的转场动画样式
-//        two.modalTransitionStyle = UIModalTransitionStyleFlipHorizontal;
-        
-        two.modalPresentationStyle = UIModalPresentationCustom;
-        two.transitioningDelegate = self.modalDelagte;
-        
         [self presentViewController:two animated:YES completion:nil];
-        
-        
-        
-        
+
     } else if (indexPath.row == 2) {
       
-        
+        ThreeViewController *three = [[ThreeViewController alloc] init];
+        [self presentViewController:three animated:YES completion:nil];
         
     } else {
         
@@ -98,19 +84,9 @@
         self.navigationController.delegate = nil;
         [self.navigationController pushViewController:two animated:YES];
     }
-    
-    
 }
 
 #pragma mark - getters
-- (ZMModalTransitionDelegate *)modalDelagte {
-    if (_modalDelagte == nil) {
-        _modalDelagte = [[ZMModalTransitionDelegate alloc] init];
-    }
-    return _modalDelagte;
-}
-
-
 - (UITableView *)tableView {
     if (_tableView == nil) {
         _tableView = [[UITableView alloc] initWithFrame:CGRectZero style:UITableViewStylePlain];
@@ -119,7 +95,7 @@
         } else {
             self.automaticallyAdjustsScrollViewInsets = NO;
         }
-        _tableView.rowHeight = 50;
+        _tableView.rowHeight = UITableViewAutomaticDimension;
         _tableView.delegate = self;
         _tableView.dataSource = self;
         
@@ -128,7 +104,7 @@
         _tableView.separatorInset = UIEdgeInsetsMake(0, 15, 0, 15);
         
         // 如果设置rowHeight 为 UITableViewAutomaticDimension，则需要提供预估高度，提高表格加载性能
-//        _tableView.estimatedRowHeight = 0;
+        _tableView.estimatedRowHeight = 50;
 //        _tableView.estimatedSectionFooterHeight = 0;
 //        _tableView.estimatedSectionHeaderHeight = 0;
             
@@ -139,5 +115,12 @@
     return _tableView;
 }
 
+
+- (NSArray *)titleArr {
+    if (_titleArr == nil) {
+        _titleArr = @[@"导航栏 push pop Transitioning", @"modal跳转 Transitioning", @"modal跳转改变VC的frame, 自定义UIAlertController", @"其它"];
+    }
+    return _titleArr;
+}
 
 @end
