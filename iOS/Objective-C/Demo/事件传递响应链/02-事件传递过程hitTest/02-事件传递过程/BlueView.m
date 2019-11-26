@@ -13,8 +13,16 @@
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
     
     UIView *v = [super hitTest:point withEvent:event];
-    NSLog(@"BlueView，self = %@, v = %@ --- hitTest:", [self class], [v class]);
+    NSLog(@"%s, 结果%@", __func__, v);
     return v;
+}
+
+// 判断触摸点是否在自己身上
+// 它在 hitTest:withEvent: 中调用
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
+    BOOL bl = [super pointInside:point withEvent:event];
+    NSLog(@"%s, 结果：%d", __func__, bl);
+    return bl;
 }
 
 @end

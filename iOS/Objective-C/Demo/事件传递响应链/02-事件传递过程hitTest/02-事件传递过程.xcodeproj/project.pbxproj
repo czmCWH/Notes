@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		113C3B932356AA1E00D1A37A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 113C3B922356AA1E00D1A37A /* AppDelegate.m */; };
-		113C3B962356AA1E00D1A37A /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 113C3B952356AA1E00D1A37A /* SceneDelegate.m */; };
 		113C3B992356AA1E00D1A37A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 113C3B982356AA1E00D1A37A /* ViewController.m */; };
 		113C3B9C2356AA1E00D1A37A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 113C3B9A2356AA1E00D1A37A /* Main.storyboard */; };
 		113C3B9E2356AA2000D1A37A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 113C3B9D2356AA2000D1A37A /* Assets.xcassets */; };
@@ -22,14 +21,13 @@
 		113C3BBB2356B08F00D1A37A /* BlueView.m in Sources */ = {isa = PBXBuildFile; fileRef = 113C3BBA2356B08F00D1A37A /* BlueView.m */; };
 		113C3BBE2356B0C400D1A37A /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 113C3BBD2356B0C400D1A37A /* BaseView.m */; };
 		113C3BC12356B7E000D1A37A /* ZMWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = 113C3BC02356B7E000D1A37A /* ZMWindow.m */; };
+		11B21C9B238BAB3B00706E40 /* TealView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11B21C9A238BAB3B00706E40 /* TealView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		113C3B8E2356AA1E00D1A37A /* 02-事件传递过程.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "02-事件传递过程.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		113C3B912356AA1E00D1A37A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		113C3B922356AA1E00D1A37A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		113C3B942356AA1E00D1A37A /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
-		113C3B952356AA1E00D1A37A /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
 		113C3B972356AA1E00D1A37A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		113C3B982356AA1E00D1A37A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		113C3B9B2356AA1E00D1A37A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -53,6 +51,8 @@
 		113C3BBD2356B0C400D1A37A /* BaseView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
 		113C3BBF2356B7E000D1A37A /* ZMWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMWindow.h; sourceTree = "<group>"; };
 		113C3BC02356B7E000D1A37A /* ZMWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMWindow.m; sourceTree = "<group>"; };
+		11B21C99238BAB3B00706E40 /* TealView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TealView.h; sourceTree = "<group>"; };
+		11B21C9A238BAB3B00706E40 /* TealView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TealView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +87,6 @@
 			children = (
 				113C3B912356AA1E00D1A37A /* AppDelegate.h */,
 				113C3B922356AA1E00D1A37A /* AppDelegate.m */,
-				113C3B942356AA1E00D1A37A /* SceneDelegate.h */,
-				113C3B952356AA1E00D1A37A /* SceneDelegate.m */,
 				113C3BBF2356B7E000D1A37A /* ZMWindow.h */,
 				113C3BC02356B7E000D1A37A /* ZMWindow.m */,
 				113C3B972356AA1E00D1A37A /* ViewController.h */,
@@ -107,6 +105,8 @@
 				113C3BB72356B08200D1A37A /* PurpleView.m */,
 				113C3BB92356B08F00D1A37A /* BlueView.h */,
 				113C3BBA2356B08F00D1A37A /* BlueView.m */,
+				11B21C99238BAB3B00706E40 /* TealView.h */,
+				11B21C9A238BAB3B00706E40 /* TealView.m */,
 				113C3B9A2356AA1E00D1A37A /* Main.storyboard */,
 				113C3B9D2356AA2000D1A37A /* Assets.xcassets */,
 				113C3B9F2356AA2000D1A37A /* LaunchScreen.storyboard */,
@@ -188,6 +188,7 @@
 			files = (
 				113C3BBE2356B0C400D1A37A /* BaseView.m in Sources */,
 				113C3BB82356B08200D1A37A /* PurpleView.m in Sources */,
+				11B21C9B238BAB3B00706E40 /* TealView.m in Sources */,
 				113C3BAC2356B04F00D1A37A /* WhiteView.m in Sources */,
 				113C3BBB2356B08F00D1A37A /* BlueView.m in Sources */,
 				113C3BC12356B7E000D1A37A /* ZMWindow.m in Sources */,
@@ -197,7 +198,6 @@
 				113C3BB22356B06200D1A37A /* GreenView.m in Sources */,
 				113C3BA42356AA2000D1A37A /* main.m in Sources */,
 				113C3BB52356B06D00D1A37A /* YellowView.m in Sources */,
-				113C3B962356AA1E00D1A37A /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -345,7 +345,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.czm.test.-2-------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.czm.test1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -363,7 +363,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.czm.test.-2-------";
+				PRODUCT_BUNDLE_IDENTIFIER = com.czm.test1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};

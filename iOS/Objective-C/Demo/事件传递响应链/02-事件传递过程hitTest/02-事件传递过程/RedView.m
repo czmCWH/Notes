@@ -11,9 +11,20 @@
 @implementation RedView
 
 - (UIView *)hitTest:(CGPoint)point withEvent:(UIEvent *)event {
+    NSLog(@"%s", __func__);
     UIView *v = [super hitTest:point withEvent:event];
-    NSLog(@"RedView，self = %@, v = %@ --- hitTest:", [self class], [v class]);
+    NSLog(@"===RedView 结果：%@ 的对象", [v class]);
     return v;
 }
+
+// 判断触摸点是否在自己身上
+// 它在 hitTest:withEvent: 中调用
+- (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event {
+    NSLog(@"%s", __func__);
+    BOOL bl = [super pointInside:point withEvent:event];
+    NSLog(@"===RedView 结果：%d", bl);
+    return bl;
+}
+
 
 @end

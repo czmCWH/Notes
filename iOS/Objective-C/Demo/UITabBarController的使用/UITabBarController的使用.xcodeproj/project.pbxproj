@@ -74,6 +74,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		113D61FE238D05A2004C0D42 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		1148FD91237E7834006957AD /* TabBarControllerDelegate */ = {
 			isa = PBXGroup;
 			children = (
@@ -282,6 +289,7 @@
 		11D46CF4237E3005008A9269 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				113D61FE238D05A2004C0D42 /* UIView */,
 				11D46D0B237E3212008A9269 /* UIColor */,
 				11D46D07237E31E8008A9269 /* UIImage */,
 			);

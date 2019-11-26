@@ -10,16 +10,27 @@
 
 @implementation UIView (Extension)
 
-
-- (UIViewController*)viewController {
-    for (UIView* next = [self superview]; next; next = next.superview) {
-        UIResponder* nextResponder = [next nextResponder];
-        if ([nextResponder isKindOfClass:[UIViewController class]]) {
-            return (UIViewController*)nextResponder;
-        }
-    }
+-(UIViewController*)parentController {
+    UIResponder *responder = [self nextResponder];
+    while (responder) {
+      if ([responder isKindOfClass:[UIViewController class]])
+          {
+        return (UIViewController*)responder;
+      }
+    responder = [responder nextResponder];
+  }
     return nil;
 }
+
+//- (UIViewController*)viewController {
+//    for (UIView* next = [self superview]; next; next = next.superview) {
+//        UIResponder* nextResponder = [next nextResponder];
+//        if ([nextResponder isKindOfClass:[UIViewController class]]) {
+//            return (UIViewController*)nextResponder;
+//        }
+//    }
+//    return nil;
+//}
 
 - (void)setX:(CGFloat)x {
     CGRect frame = self.frame;

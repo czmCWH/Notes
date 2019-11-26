@@ -113,6 +113,10 @@
 }
 
 - (void)handlePan:(UIPanGestureRecognizer *)recongizer {
+    ZMNavigationController *nav = self.selectedViewController;
+    if (nav.viewControllers.count > 1) {
+        return;
+    }
     
     CGFloat translationX = [recongizer translationInView:self.view].x;
     CGFloat translationAbs = translationX > 0 ? translationX : -translationX;

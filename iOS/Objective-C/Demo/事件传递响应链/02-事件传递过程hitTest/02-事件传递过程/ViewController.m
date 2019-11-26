@@ -17,16 +17,22 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+
 }
+
 
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    for (UIView *v in self.view.subviews) {
-        NSLog(@"======控制器View的顺序： %@", [v class]);
-    }
+//    for (UIView *v in self.view.subviews) {
+//        NSLog(@"======控制器View的顺序： %@", [v class]);
+//    }
 }
 
+
+- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+    NSLog(@"===VC: %s, %p", __func__, event);
+}
 
 @end
