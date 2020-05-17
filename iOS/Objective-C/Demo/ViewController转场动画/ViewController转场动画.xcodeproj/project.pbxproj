@@ -27,6 +27,7 @@
 		11F7DAFE2383BCAA00769DF5 /* ThreeAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F7DAFD2383BCAA00769DF5 /* ThreeAnimator.m */; };
 		11F7DB012383BD5300769DF5 /* ThreePresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F7DB002383BD5300769DF5 /* ThreePresentationController.m */; };
 		11F7DB042383C50A00769DF5 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F7DB032383C50A00769DF5 /* UIView+Extension.m */; };
+		A9A5852877ABED1CEADE43FA /* Pods_ViewController____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C4DFA001B607B0249D46D6 /* Pods_ViewController____.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		113F187F23850C8B00B61DDE /* ZMNavigationTransitionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMNavigationTransitionDelegate.m; sourceTree = "<group>"; };
 		113F188123850DFA00B61DDE /* ZMNavigationAnimatedTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMNavigationAnimatedTransitioning.h; sourceTree = "<group>"; };
 		113F188223850DFA00B61DDE /* ZMNavigationAnimatedTransitioning.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMNavigationAnimatedTransitioning.m; sourceTree = "<group>"; };
+		11931CD4244824F1003EEDCA /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		11931CD8244824F9003EEDCA /* Pods_ViewController转场动画.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = "Pods_ViewController转场动画.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F04B31237B969B0013E090 /* ViewController转场动画.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ViewController转场动画.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11F04B34237B969B0013E090 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11F04B35237B969B0013E090 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -69,8 +72,8 @@
 		11F7DB002383BD5300769DF5 /* ThreePresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ThreePresentationController.m; sourceTree = "<group>"; };
 		11F7DB022383C50A00769DF5 /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		11F7DB032383C50A00769DF5 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
-		9D5EAC24D43FB528A4BA25EF /* Pods_ViewController____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_ViewController____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C0996A2CCB5A00BD157D66 /* Pods-ViewController转场动画.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewController转场动画.debug.xcconfig"; path = "Target Support Files/Pods-ViewController转场动画/Pods-ViewController转场动画.debug.xcconfig"; sourceTree = "<group>"; };
+		B4C4DFA001B607B0249D46D6 /* Pods_ViewController____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewController____.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8215928FE2984FA72082F2C /* Pods-ViewController转场动画.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewController转场动画.release.xcconfig"; path = "Target Support Files/Pods-ViewController转场动画/Pods-ViewController转场动画.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9A5852877ABED1CEADE43FA /* Pods_ViewController____.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,7 +235,9 @@
 		78F12AD706B47255475F5FCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				9D5EAC24D43FB528A4BA25EF /* Pods_ViewController____.framework */,
+				11931CD8244824F9003EEDCA /* Pods_ViewController转场动画.framework */,
+				11931CD4244824F1003EEDCA /* Masonry.framework */,
+				B4C4DFA001B607B0249D46D6 /* Pods_ViewController____.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

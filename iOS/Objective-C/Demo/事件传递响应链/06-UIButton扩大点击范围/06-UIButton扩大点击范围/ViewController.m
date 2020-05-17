@@ -8,10 +8,14 @@
 
 #import "ViewController.h"
 #import "ZMHitButton.h"
+#import "ZMView.h"
 
 @interface ViewController ()
 
 @property (weak, nonatomic) IBOutlet ZMHitButton *redBtn;
+
+@property (weak, nonatomic) IBOutlet ZMView *yellowView;
+
 
 @end
 
@@ -23,6 +27,8 @@
     
     self.redBtn.stretchW = 40.0;
     self.redBtn.stretchH = 40.0;
+    
+    
 }
 
 - (IBAction)clickRedBtn:(ZMHitButton *)sender {

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11258A6F24712960003FD6CD /* ZMView.m in Sources */ = {isa = PBXBuildFile; fileRef = 11258A6E24712960003FD6CD /* ZMView.m */; };
 		11ABDEEC2359450B00A06699 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ABDEEB2359450B00A06699 /* AppDelegate.m */; };
 		11ABDEF22359450B00A06699 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11ABDEF12359450B00A06699 /* ViewController.m */; };
 		11ABDEF52359450B00A06699 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11ABDEF32359450B00A06699 /* Main.storyboard */; };
@@ -17,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11258A6D24712960003FD6CD /* ZMView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZMView.h; sourceTree = "<group>"; };
+		11258A6E24712960003FD6CD /* ZMView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZMView.m; sourceTree = "<group>"; };
 		11ABDEE72359450B00A06699 /* 06-UIButton扩大点击范围.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "06-UIButton扩大点击范围.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		11ABDEEA2359450B00A06699 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		11ABDEEB2359450B00A06699 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -67,6 +70,8 @@
 				11ABDEF12359450B00A06699 /* ViewController.m */,
 				11ABDF032359472900A06699 /* ZMHitButton.h */,
 				11ABDF042359472900A06699 /* ZMHitButton.m */,
+				11258A6D24712960003FD6CD /* ZMView.h */,
+				11258A6E24712960003FD6CD /* ZMView.m */,
 				11ABDEF32359450B00A06699 /* Main.storyboard */,
 				11ABDEF62359450E00A06699 /* Assets.xcassets */,
 				11ABDEF82359450E00A06699 /* LaunchScreen.storyboard */,
@@ -150,6 +155,7 @@
 				11ABDEF22359450B00A06699 /* ViewController.m in Sources */,
 				11ABDEEC2359450B00A06699 /* AppDelegate.m in Sources */,
 				11ABDEFD2359450E00A06699 /* main.m in Sources */,
+				11258A6F24712960003FD6CD /* ZMView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
