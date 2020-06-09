@@ -75,6 +75,11 @@
 @dynamic title;
 
 
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+}
+
 - (instancetype)initWithTitle:( NSString *)title
                      delegate:(id<HSActionSheetDelegate>)delegate
             cancelButtonTitle:( NSString *)cancelButtonTitle
