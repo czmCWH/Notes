@@ -4,26 +4,27 @@
 //
 //  Created by czm on 2020/10/9.
 //  Copyright © 2020 czm. All rights reserved.
-//
+//  参考博客：https://www.jianshu.com/p/60d19729e981
 
 #import "NSArray+Log.h"
 
 @implementation NSArray (Log)
 
+#ifdef DEBUG
+
 - (NSString *)descriptionWithLocale:(id)locale
 {
-    NSMutableString *strM = [NSMutableString stringWithString:@"(\n"];
+    NSMutableString *strM = [NSMutableString stringWithString:@"[\n"];
 
     [self enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
         [strM appendFormat:@"\t%@,\n", obj];
     }];
 
-    [strM appendString:@")"];
+    [strM appendString:@"]"];
 
     return strM;
 }
 
-#ifdef DEBUG
 // NSLog数组对象时会调用此方法，将里面的中文在控制台打印出来
 - (NSString *)descriptionWithLocale:(nullable id)locale indent:(NSUInteger)level {
     if ([NSJSONSerialization isValidJSONObject:self]) {
@@ -49,7 +50,7 @@
 
 @implementation NSDictionary (Log)
 
-
+#ifdef DEBUG
 - (NSString *)descriptionWithLocale:(id)locale
 {
     NSMutableString *strM = [NSMutableString stringWithString:@"{\n"];
@@ -63,7 +64,6 @@
     return strM;
 }
 
-#ifdef DEBUG
 - (NSString *)descriptionWithLocale:(nullable id)locale indent:(NSUInteger)level {
     // 此注释掉的版本有缺陷，当self里面包含json转换不支持的类型时会报错：Invalid type in JSON write
     /*
