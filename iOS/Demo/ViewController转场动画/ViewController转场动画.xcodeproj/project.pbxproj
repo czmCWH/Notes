@@ -27,8 +27,23 @@
 		11F7DAFE2383BCAA00769DF5 /* ThreeAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F7DAFD2383BCAA00769DF5 /* ThreeAnimator.m */; };
 		11F7DB012383BD5300769DF5 /* ThreePresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F7DB002383BD5300769DF5 /* ThreePresentationController.m */; };
 		11F7DB042383C50A00769DF5 /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 11F7DB032383C50A00769DF5 /* UIView+Extension.m */; };
-		A9A5852877ABED1CEADE43FA /* Pods_ViewController____.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4C4DFA001B607B0249D46D6 /* Pods_ViewController____.framework */; };
+		F5CBD50B2580C14F006EAE17 /* Pods_ViewController转场动画.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5CBD50A2580C14F006EAE17 /* Pods_ViewController转场动画.framework */; };
+		F5CBD50C2580C14F006EAE17 /* Pods_ViewController转场动画.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F5CBD50A2580C14F006EAE17 /* Pods_ViewController转场动画.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F5CBD50D2580C150006EAE17 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F5CBD50C2580C14F006EAE17 /* Pods_ViewController转场动画.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		112371AD237CEAC200435AAC /* AnimatedTransitioning.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AnimatedTransitioning.h; sourceTree = "<group>"; };
@@ -73,8 +88,10 @@
 		11F7DB022383C50A00769DF5 /* UIView+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
 		11F7DB032383C50A00769DF5 /* UIView+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		A1C0996A2CCB5A00BD157D66 /* Pods-ViewController转场动画.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewController转场动画.debug.xcconfig"; path = "Target Support Files/Pods-ViewController转场动画/Pods-ViewController转场动画.debug.xcconfig"; sourceTree = "<group>"; };
-		B4C4DFA001B607B0249D46D6 /* Pods_ViewController____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViewController____.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4C4DFA001B607B0249D46D6 /* Pods_ViewController____.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Pods_ViewController____.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D8215928FE2984FA72082F2C /* Pods-ViewController转场动画.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViewController转场动画.release.xcconfig"; path = "Target Support Files/Pods-ViewController转场动画/Pods-ViewController转场动画.release.xcconfig"; sourceTree = "<group>"; };
+		F5CBD5032580C13F006EAE17 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F5CBD50A2580C14F006EAE17 /* Pods_ViewController转场动画.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = "Pods_ViewController转场动画.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9A5852877ABED1CEADE43FA /* Pods_ViewController____.framework in Frameworks */,
+				F5CBD50B2580C14F006EAE17 /* Pods_ViewController转场动画.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +252,8 @@
 		78F12AD706B47255475F5FCE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F5CBD50A2580C14F006EAE17 /* Pods_ViewController转场动画.framework */,
+				F5CBD5032580C13F006EAE17 /* Masonry.framework */,
 				11931CD8244824F9003EEDCA /* Pods_ViewController转场动画.framework */,
 				11931CD4244824F1003EEDCA /* Masonry.framework */,
 				B4C4DFA001B607B0249D46D6 /* Pods_ViewController____.framework */,
@@ -262,7 +281,8 @@
 				11F04B2D237B969B0013E090 /* Sources */,
 				11F04B2E237B969B0013E090 /* Frameworks */,
 				11F04B2F237B969B0013E090 /* Resources */,
-				CD0E16092446CE09565A5729 /* [CP] Embed Pods Frameworks */,
+				46DC196ECA23EF0D85C02F35 /* [CP] Embed Pods Frameworks */,
+				F5CBD50D2580C150006EAE17 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -318,6 +338,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		46DC196ECA23EF0D85C02F35 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViewController转场动画/Pods-ViewController转场动画-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ViewController转场动画/Pods-ViewController转场动画-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViewController转场动画/Pods-ViewController转场动画-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		91F7A09C88765F202A53C00C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -338,23 +375,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		CD0E16092446CE09565A5729 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ViewController转场动画/Pods-ViewController转场动画-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-ViewController转场动画/Pods-ViewController转场动画-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ViewController转场动画/Pods-ViewController转场动画-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
