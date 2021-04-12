@@ -11,7 +11,6 @@
 
 [github * Flutter中国开源项目](https://github.com/flutterchina)
 
-
 新出的Flutter我就不录了看了下课程表比较基础。推荐几个b站免费课程。
 宁浩网flutter课程：av52699308 这个课程几乎是按照flutter中文网的文档顺序讲的。
 技术胖基础课程:av35800108
@@ -23,7 +22,7 @@ https://github.com/google/flutter-desktop-embedding
 
 [技术胖Flutter博客](http://jspang.com/list?id=1)
 
-
+[山月行 * flutter入门指南](https://shanyue.tech/flutter-guide/#参考)
 
 [淘系技术 - Flutter 快速上手，秒变大前端](https://mp.weixin.qq.com/s/4c9RaBKm6Bs0RI3rmU8T2Q)
 
