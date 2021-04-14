@@ -11,7 +11,7 @@
 
 如下简单示例，`ElevatedButton`会增加它子项的宽度：
 
-![1](六/111.png)
+![-w130](六/111.png)
 
 ```Dart
 Column(
@@ -180,7 +180,6 @@ class SampleAppPage extends StatelessWidget {
 
 如下使用 `MaterialPageRoute` 实例向 `Stack` 上 `push` 新的 `route`，然后使用 `Navigator.pop` 方法 `pop` 弹出：
 
-![-w300](六/2.gif)
 ![-w300](六/1.gif)
 
 ```Dart
