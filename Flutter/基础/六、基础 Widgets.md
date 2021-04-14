@@ -117,7 +117,7 @@ OutlinedButton.icon(
 
 如下是 `Scaffold` 组件的基本使用：
 
-![-w303](六/444.jpg)
+![-w250](六/444.jpg)
 
 ```Dart
 class SampleAppPage extends StatelessWidget {
