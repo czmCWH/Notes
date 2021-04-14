@@ -180,8 +180,8 @@ class SampleAppPage extends StatelessWidget {
 
 如下使用 `MaterialPageRoute` 实例向 `Stack` 上 `push` 新的 `route`，然后使用 `Navigator.pop` 方法 `pop` 弹出：
 
+![-w300](六/2.gif)
 ![-w300](六/1.gif)
-
 
 ```Dart
 void main() {
@@ -247,7 +247,6 @@ class TwoPage extends StatelessWidget {
 可以使用 `Map<String, WidgetBuilder>` 创建 `MaterialApp`，该 `Map<String, WidgetBuilder>` 从 `route` 的名称映射到 将创建该`route`的构建器函数。`MaterialApp`使用此映射为其导航器的 `onGenerateRoute` 回调创建一个值。
 
 ![-w300](六/2.gif)
-
 
 ```Dart
 void main() {
