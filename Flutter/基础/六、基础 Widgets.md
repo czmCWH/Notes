@@ -160,23 +160,28 @@ class SampleAppPage extends StatelessWidget {
 
 ## Navigator
 
-[Navigator](https://api.flutter.dev/flutter/widgets/Navigator-class.html) 是用 `Stack` 规则管理一组子组件的组件。
+* [Navigator](https://api.flutter.dev/flutter/widgets/Navigator-class.html) 是用 `Stack` 规则管理一组子组件的组件。
 
-### 使用 Navigator API
+* 移动应用程序通常通过称为 `screens`(屏幕) 或 `pages`(页面) 的全屏元素来显示其内容。在`Flutter`中，这些元素称为 `routes`(路由)，由 `Navigator`组件管理。
 
-移动应用程序通常通过称为 `screens`(屏幕) 或 `pages`(页面) 的全屏元素来显示其内容。在`Flutter`中，这些元素称为 `routes`(路由)，由 `Navigator`组件管理。
+* `navigator` 管理 [Route](https://api.flutter.dev/flutter/widgets/Route-class.html) 对象的 `Stack`，并提供两种管理 `stack` 的方法：声明式API `Navigator.pages` 或 命令式API `Navigator.push` 和 `Navigator.pop`。
 
-`navigator` 管理[Route](https://api.flutter.dev/flutter/widgets/Route-class.html) 对象的 `Stack`，并提供两种管理 `stack` 的方法：声明式API `Navigator.pages` 或 命令式API `Navigator.push`和`Navigator.pop`。
+### Route
 
-#### 使用 Pages API
+一个 [route](https://api.flutter.dev/flutter/widgets/Route-class.html) 是一个屏幕或页面的抽象，`Navigator`是管理 `route` 的 `Widget`。`Navigator`可以通过 `route` 入栈和出栈来实现页面之间的跳转。
 
-`Navigator`会将其 `Navigator.pages` 转换为 `Routes` 的 `Stack`。 `Navigator.pages` 中的更改将触发对`Routes` 的 `Stack`的更新。`Navigator`将更新其`Routes`，以匹配其 `Navigator.pages` 的新配置。要使用此API，需要创建一个`Page`子类，并为`Navigator.pages`定义一个`Pages`列表。在 `pop`(弹出)的情况下，还需要 `Navigator.onPopPage` 回调来正确清理 `input pages`(输入页面)。
+
+### 使用 Pages API
+
+`Navigator` 会将其 `Navigator.pages` 转换为 `Routes`的`Stack`。 `Navigator.pages` 中的更改将触发对`Routes` 的 `Stack`的更新。`Navigator`将更新其`Routes`，以匹配其 `Navigator.pages` 的新配置。要使用此API，需要创建一个`Page`子类，并为`Navigator.pages`定义一个`Pages`列表。在 `pop`(弹出)的情况下，还需要 `Navigator.onPopPage` 回调来正确清理 `input pages`(输入页面)。
 
 默认情况下，`Navigator`将使用 `DefaultTransitionDelegate` 来确定 `routes` 如何在屏幕内或屏幕外过渡。要对其进行自定义，请定义一个 `TransitionDelegate` 子类，并将其提供给`Navigator.transitionDelegate`。
 
-##### 显示full-screen route
+#### 显示full-screen route
 
 尽管可以直接创建`navigator`，但是最常见的是使用由 `Router` 创建的 `navigator`，`Router`本身是由 `WidgetsApp` 或 `MaterialApp` 组件创建和配置的。可以使用 `Navigator.of` 引用该`navigator`。
+
+`MaterialApp` 是设置事物的最简单方法。 `MaterialApp`的 `home` 属性成为`Navigator's stack`底部的`route`。
 
 如下使用 `MaterialPageRoute` 实例向 `Stack` 上 `push` 新的 `route`，然后使用 `Navigator.pop` 方法 `pop` 弹出：
 
@@ -191,9 +196,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: HomePage(),
-    );
+    return const MaterialApp(home: HomePage(),);
   }
 }
 ```
@@ -239,7 +242,7 @@ class TwoPage extends StatelessWidget {
 }
 ```
 
-##### 使用 named navigator routes
+#### 使用命名的 navigator routes
 
 移动应用程序经常管理大量`routes`，通常最容易按名称引用它们。按照惯例，`Route names`使用类似路径的结构（例如`'/a/b/c'`）。该应用程序的首页 `route` 默认命名为 '/' 。
 
@@ -290,6 +293,8 @@ class TwoPage extends StatelessWidget {
   }
 }
 ```
+
+
 
 
 ## 学习博客

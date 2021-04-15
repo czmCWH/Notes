@@ -35,6 +35,8 @@ https://github.com/google/flutter-desktop-embedding
 
 [Flutter 跨平台演进及架构开篇](http://gityuan.com/flutter/)
 
+[QiShare](https://www.jianshu.com/u/3db23baa08c7)
+
 ## 面试题
 
 [ahyangnb/flutter_interview](https://github.com/ahyangnb/flutter_interview)，Flutter面试题和答案收集，各种知识点的深入研究，学完之后征服你的面试官。
