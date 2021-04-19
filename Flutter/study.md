@@ -37,6 +37,8 @@ https://github.com/google/flutter-desktop-embedding
 
 [QiShare](https://www.jianshu.com/u/3db23baa08c7)
 
+[CarGuo/gsy_flutter_demo](https://github.com/CarGuo/gsy_flutter_demo)，1.9k，本项目将逐步完善各种 Flutter 独立例子，方便新手学习上手和小问题方案解决。
+
 ## 面试题
 
 [ahyangnb/flutter_interview](https://github.com/ahyangnb/flutter_interview)，Flutter面试题和答案收集，各种知识点的深入研究，学完之后征服你的面试官。
