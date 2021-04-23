@@ -64,3 +64,7 @@ https://github.com/google/flutter-desktop-embedding
 [polkawallet-io/app](https://github.com/polkawallet-io/app)
 
 [CarGuo/gsy_github_app_flutter](https://github.com/CarGuo/gsy_github_app_flutter)，12.2k，Flutter 不同于 GSYGithubAppFlutter 完整项目，本项目将逐步完善各种 Flutter 独立例子，方便新手学习上手和小问题方案解决。 
+
+[toly1994328/FlutterUnit](https://github.com/toly1994328/FlutterUnit)，3.1k，Flutter 集录指南 App】
+
+[flutter/samples](https://github.com/flutter/samples)，9.6k，Flutter示例和演示的集合。
