@@ -61,6 +61,8 @@ https://github.com/google/flutter-desktop-embedding
 
 ## 开源项目
 
+[simplezhli/flutter_deer](https://github.com/simplezhli/flutter_deer)，4.8k，Flutter 练习项目(包括集成测试、可访问性测试)。内含完整UI设计图，更贴近真实项目的练习。
+
 [polkawallet-io/app](https://github.com/polkawallet-io/app)
 
 [CarGuo/gsy_github_app_flutter](https://github.com/CarGuo/gsy_github_app_flutter)，12.2k，Flutter 不同于 GSYGithubAppFlutter 完整项目，本项目将逐步完善各种 Flutter 独立例子，方便新手学习上手和小问题方案解决。 
