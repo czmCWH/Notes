@@ -25,6 +25,8 @@ https://github.com/google/flutter-desktop-embedding
 
 [技术胖Flutter博客](http://jspang.com/list?id=1)
 
+[yang7229693/flutter-study](https://github.com/yang7229693/flutter-study)，2.4k，持续更新Flutter学习过程中的总结。
+
 [山月行 * flutter入门指南](https://shanyue.tech/flutter-guide/#参考)
 
 [淘系技术 - Flutter 快速上手，秒变大前端](https://mp.weixin.qq.com/s/4c9RaBKm6Bs0RI3rmU8T2Q)
